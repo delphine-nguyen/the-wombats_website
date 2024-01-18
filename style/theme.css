@@ -1,0 +1,174 @@
+/* Fonts ==============================*/
+
+.mainFont {
+	font-family: "Rock Salt", cursive;
+	font-family: "Salsa", cursive;
+}
+
+/* Colors ==============================*/
+
+.bgPrimaryColor {
+	background-color: rgb(196, 0, 232);
+}
+
+.textOnPrimaryColorBg {
+	color: white;
+}
+
+.borderPrimaryColor {
+	border: 1px solid rgba(196, 0, 232, 255);
+}
+
+.bgSecondaryColor {
+	background-color: rgba(240, 191, 62, 255);
+}
+
+.textOnSecondaryColorBg {
+	color: rgb(0, 25, 169);
+}
+
+.borderSecondaryColor {
+	border: 1px solid rgb(1, 85, 245);
+}
+
+::selection {
+	background-color: rgb(0, 241, 128);
+}
+
+/* Main & body ==============================*/
+
+body {
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	width: 70vw;
+	margin: 50px auto;
+}
+
+/* Titles ==============================*/
+
+h1 {
+	font-size: 100px;
+	text-align: center;
+
+	padding: 40px 0;
+}
+
+h2 {
+	font-size: 40px;
+	text-align: center;
+
+	padding: 20px 0;
+}
+
+/* Navigation bar ==============================*/
+
+nav:first-child {
+	display: grid;
+	grid-template-areas: "logo listing inscription";
+	grid-template-columns: 5fr min-content min-content;
+
+	align-items: center;
+	justify-items: center;
+
+	position: sticky;
+	top: 0px;
+
+	z-index: 1;
+}
+
+#aLogo {
+	grid-area: logo;
+	justify-self: start;
+}
+
+#aListing {
+	grid-area: listing;
+}
+
+#aInscription {
+	grid-area: inscription;
+}
+
+/* Footer ==============================*/
+
+footer {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	margin-top: auto;
+}
+
+/* Img ==============================*/
+
+img.logo {
+	width: 30px;
+	height: 30px;
+
+	border-radius: 50%;
+}
+
+img.cover {
+	width: 100%;
+	height: 500px;
+}
+
+img.icon {
+	height: 15px;
+	width: 15px;
+}
+
+img.cover:hover {
+	animation-name: blink;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+/* Links ==============================*/
+
+a {
+	padding: 5px;
+
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Forms ==============================*/
+
+button,
+input {
+	border-radius: 10px;
+}
+
+/* Animations ========================= */
+
+@keyframes blink {
+	from {
+		filter: saturate(3);
+	}
+
+	25% {
+		filter: none;
+	}
+
+	50% {
+		filter: saturate(2);
+	}
+
+	75% {
+		filter: none;
+	}
+
+	to {
+		filter: saturate(4);
+	}
+}

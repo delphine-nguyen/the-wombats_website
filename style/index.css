@@ -1,0 +1,62 @@
+/* Titles ==============================*/
+
+h1 {
+	position: relative;
+	bottom: 340px;
+	margin-bottom: -200px;
+}
+
+/* Gallery ==============================*/
+
+.gallery {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+
+	padding: 20px;
+}
+
+.gallery img {
+	width: 250px;
+	height: 250px;
+
+	border-radius: 50px;
+
+	opacity: 70%;
+
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+
+.gallery > img:hover {
+	opacity: 100%;
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+
+	z-index: 2;
+}
+
+/* Description ==============================*/
+
+.description {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: (2, 1fr);
+	justify-content: center;
+	align-items: center;
+
+	padding: 20px 50px;
+}
+
+.description > .mainArticle {
+	grid-column: span 2;
+}
+
+.description > article {
+	padding: 10px;
+
+	text-align: justify;
+}

@@ -1,0 +1,36 @@
+/* Container =========================================*/
+
+#container {
+	padding: 20px;
+}
+
+/* Header du container =========================================*/
+
+#container > header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Listing =========================================*/
+
+#listing {
+	padding: 20px;
+}
+
+.song,
+.caption {
+	display: grid;
+	grid-template-columns: 2fr 3fr 1fr 2fr;
+
+	justify-items: start;
+	align-items: center;
+	justify-content: center;
+
+	padding: 10px;
+	margin: 5px;
+}
+
+.caption {
+	font-weight: bold;
+}
