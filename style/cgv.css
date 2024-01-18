@@ -4,6 +4,7 @@ header > nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 header > nav > a,
@@ -45,4 +46,23 @@ hr {
 	justify-content: flex-end;
 
 	padding: 20px;
+}
+
+/* Media Queries =====================*/
+
+@media screen and (max-width: 375px) {
+	main {
+		width: 100vw;
+	}
+	.condition {
+		padding: 10px;
+
+		width: 80vw;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	header > nav > a {
+		padding: 10px 20px;
+	}
 }

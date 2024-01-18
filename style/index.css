@@ -60,3 +60,68 @@ h1 {
 
 	text-align: justify;
 }
+
+/* Media queries ==============================*/
+
+@media screen and (max-width: 1060px) {
+	.gallery img {
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.description {
+		grid-template-columns: 1fr;
+	}
+
+	.description > .mainArticle {
+		grid-column: 1;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	main {
+		width: 100vw;
+		margin: 40px auto;
+	}
+
+	img.cover {
+		height: 350px;
+	}
+
+	h1 {
+		font-size: 60px;
+
+		bottom: 245px;
+		margin-bottom: -170px;
+
+		padding: 35px 0;
+	}
+
+	.description {
+		padding: 15px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	main {
+		width: 100vw;
+		padding: none;
+	}
+
+	.description {
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	h1 {
+		font-size: 50px;
+
+		bottom: 230px;
+	}
+
+	img.cover {
+		height: 340px;
+	}
+}

@@ -48,3 +48,21 @@ p {
 	padding: 5px;
 	margin: 5px;
 }
+
+/* Media queries ======================== */
+
+@media screen and (max-width: 1000px) {
+	main {
+		width: 70vw;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	main {
+		width: 90vw;
+	}
+
+	form > section {
+		grid-template-columns: 1fr;
+	}
+}
